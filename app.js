@@ -12,8 +12,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-//Local
-//mongoose.connect("mongodb://localhost:27017/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 //Mongo Atlas Server
 mongoose.connect("mongodb+srv://mongo_admin:admin@123@nodeapi-vftnw.mongodb.net/todoLists?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 
